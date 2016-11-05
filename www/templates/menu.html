@@ -12,23 +12,27 @@
     <ion-nav-view name="menuContent"></ion-nav-view>
   </ion-side-menu-content>
 
-  <ion-side-menu side="left">
-    <ion-header-bar class="bar-stable">
-      <h1 class="title">Left</h1>
-    </ion-header-bar>
+  <ion-side-menu side="left" class="side-menu-gradient">
     <ion-content>
       <ion-list>
-        <ion-item menu-close ng-click="login()">
-          Login
+        <ion-item class="text-center side-menu-item">
+          <img src="http://lorempixel.com/400/400/people/" class="profile-image">
+          <h2>Yonathan</h2>
         </ion-item>
-        <ion-item menu-close href="#/app/search">
-          Search
+        <ion-item menu-close ng-click="login()" class="item-icon-left side-menu-item">
+          <i class="icon ion-volume-high xx-large"></i> Perd&iacute; mi mascota
         </ion-item>
-        <ion-item menu-close href="#/app/browse">
-          Browse
+        <ion-item menu-close ng-click="" class="item-icon-left side-menu-item">
+          <i class="icon ion-heart xx-large"></i> Mis mascotas
         </ion-item>
-        <ion-item menu-close href="#/app/playlists">
-          Playlists
+        <ion-item menu-close ng-click="" class="item-icon-left side-menu-item">
+          <i class="icon ion-help-buoy xx-large"></i> Avisos
+        </ion-item>
+        <ion-item menu-close ng-click="" class="item-icon-left side-menu-item">
+          <i class="icon ion-pin xx-large"></i> Marcados
+        </ion-item>
+        <ion-item menu-close ng-click="" class="item-icon-left side-menu-item">
+          <i class="icon ion-log-out xx-large"></i> Salir
         </ion-item>
       </ion-list>
     </ion-content>
