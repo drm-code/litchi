@@ -53,4 +53,27 @@ angular.module('litchi.controllers', [])
 })
 
 .controller('PlaylistCtrl', function($scope, $stateParams) {
+})
+
+.controller('AvisosCtrl', function($scope, $stateParams) {
+  $scope.avisos = [
+    {
+      avatar:'http://lorempixel.com/400/500/people/',
+      image:'http://lorempixel.com/400/500/animals/',
+      text:'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore officia quod quasi est, dolor accusamus quaerat, commodi quas, modi nisi quae doloribus eveniet magni quis.',
+      comments: 5
+    },
+    {
+      avatar:'http://lorempixel.com/700/600/people/',
+      image:'http://lorempixel.com/700/600/animals/',
+      text:'Lorem ipsum dolor sit amet, consectetur adipisicing elit. At assumenda quis eveniet totam, quasi delectus!',
+      comments: 7
+    },
+    {
+      avatar:'http://lorempixel.com/900/700/people/',
+      image:'http://lorempixel.com/900/700/animals/',
+      text:'Lorem ipsum dolor sit.',
+      comments: 16
+    }
+  ];
 });

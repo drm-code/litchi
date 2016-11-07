@@ -4,7 +4,7 @@
 // 'litchi' is the name of this angular module example (also set in a <body> attribute in index.html)
 // the 2nd parameter is an array of 'requires'
 // 'litchi.controllers' is found in controllers.js
-angular.module('litchi', ['ionic', 'litchi.controllers'])
+angular.module('litchi', ['ionic', 'litchi.controllers', 'litchi.directives'])
 
 .run(function($ionicPlatform) {
   $ionicPlatform.ready(function() {
@@ -32,11 +32,12 @@ angular.module('litchi', ['ionic', 'litchi.controllers'])
     controller: 'AppCtrl'
   })
 
-  .state('app.search', {
-    url: '/search',
+  .state('app.avisos', {
+    url: '/avisos',
     views: {
       'menuContent': {
-        templateUrl: 'templates/search.html'
+        templateUrl: 'templates/avisos.html',
+        controller: 'AvisosCtrl',
       }
     }
   })
@@ -69,5 +70,5 @@ angular.module('litchi', ['ionic', 'litchi.controllers'])
     }
   });
   // if none of the above states are matched, use this as the fallback
-  $urlRouterProvider.otherwise('/app/playlists');
+  $urlRouterProvider.otherwise('/app/avisos');
 });

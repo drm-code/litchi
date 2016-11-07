@@ -16,7 +16,7 @@ $dark:                            #444 !default;
 */
 
 $positive: #303F9F;
-$SIDEMENU_TRANSPARENCY: rgba(255,255,255,0.4);
+$SIDEMENU_TRANSPARENCY: rgba(255,255,255,0.5);
 
 // The path for our ionicons font files, relative to the built CSS in www/css
 $ionicons-font-path: "../lib/ionic/fonts" !default;
@@ -88,4 +88,23 @@ $ionicons-font-path: "../lib/ionic/fonts" !default;
     }
 }
 
+.large {font-size: large;}
+.x-large {font-size: x-large;}
 .xx-large {font-size: xx-large;}
+.p200 {font-size: 200%;}
+.p300 {font-size: 300%;}
+
+.avisos-bg {background: #e4e4e4;}
+
+.pull-right {float: right;}
+
+.search-status {top: 25px !important;}
+
+.item-body {
+	h2 {
+		font-size: 24px;
+		font-weight: 700;
+	}
+}
+
+.badge-list {right: 16px !important;}
